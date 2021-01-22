@@ -15,6 +15,17 @@ entrysRouter.get("/", (req, res, next) => {
     })
 })
 
+// get one
+// entrysRouter.get("/:journalId", (req, res, next) => {
+//     Journals.find({type: req.query.emotion}, (err, entry) => {
+//       if(err){
+//         res.status(500)
+//         return next(err)
+//       }
+//       return res.status(200).send(entry)
+//     })
+//     })
+
 // post
 entrysRouter.post("/", (req, res, next) => {
     const newEntry = new Journals(req.body)
@@ -57,16 +68,3 @@ entrysRouter.delete("/:journalId", (req, res, next) => {
 
 
 module.exports = entrysRouter
-
-
-
-// get one
-// entrysRouter.get("/:journalId", (req, res, next) => {
-//     Journals.find((emotion, entrys) => {
-//         if(err){
-//             res.status(500)
-//             return next(err)
-//         }
-//         return res.status(200).send(entrys)
-//     })
-// })

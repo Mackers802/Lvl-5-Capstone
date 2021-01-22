@@ -18,7 +18,11 @@ const journalsSchema = new Schema({
     img: {
         type: String,
         required: true
-    }
+    },
+    // emotion: {
+    //     type: String,
+    //     required: true
+    // }
 })
 
 module.exports = mongoose.model("Journals", journalsSchema)
