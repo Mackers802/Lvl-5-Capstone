@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "axios": "^0.21.1",
+    "build": "^0.1.4",
     "express": "^4.17.1",
     "mongoose": "^5.11.13",
     "morgan": "^1.10.0"
